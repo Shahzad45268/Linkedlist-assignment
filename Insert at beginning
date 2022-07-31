@@ -1,0 +1,80 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+class Linkedlist
+{
+    public:
+    class Node
+    {
+        private:
+        int data;
+        Node*next;
+    
+    public:
+    Node()
+    {
+        data=0;
+        next=NULL;
+    } 
+    Node(int data)
+    {
+        this->data=data;
+        next=NULL;
+    } 
+    int getData()
+     {
+         return this->data;
+     }
+     void setData(int data)
+     {
+         this->data=data;
+     } 
+     Node*getNext()
+     {
+         return next;
+     } 
+     void setnext(Node*next)
+     {
+         this->next=next;
+     }
+};
+LinkedList()
+{
+    head=NULL;
+} 
+ 
+bool isEmpty()
+{
+    return head==NULL;
+}
+void insertAtBeginning(int val)
+{
+    Node*node=new Node(val);
+   if (isEmpty())
+   head=Node;
+   else
+   {
+       Node->setNext(head);
+       head=Node;
+   }
+
+}  
+ void display()
+ {
+     Node*temp=head;
+     while(temp!=NULL) 
+     {
+         cout<<" "temp->getData()<<" ";
+         temp=temp->getNext();
+     }
+     cout<<endl;
+     
+ } 
+ int main()
+ {
+     Linkedlist L1;
+     L1.insert(1);
+     L2. insert(2);
+     L3.insert(3);
+     L1.display();
+ }
